@@ -1,0 +1,362 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+#root {
+    font-family: Poppins, Verdana, sans-serif;
+    --border-width: 2px;
+    --border-radius: 0.3rem;
+    background-color: rgb(0, 6, 13);
+}
+header {
+    height: 600px;
+    background-image: url(https://creatorverse-production.up.railway.app/static/media/banner.de5659898d3bfc5eb8ea.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid rgb(66, 74, 89);
+    text-align: center;
+    padding-top: 8em;
+}
+
+p {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+
+h1 {
+    font-family: Sono;
+    font-size: 8vw;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+h2 {
+  --color: var(--h2-color);
+}
+
+h2, h3 {
+  font-family: Poppins;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+
+nav [role=button] {
+    margin-right: inherit;
+    margin-left: inherit;
+    padding: var(--nav-link-spacing-vertical) var(--nav-link-spacing-horizontal);
+}
+
+[role=button] {
+    width: 15em;
+}
+
+button, input[type=button], [role=button] {
+    --background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    height: 3em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Card */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.title {
+    display: flex;  
+    flex-direction: column;
+}
+
+i {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.title i {
+    font-size: 1.5rem;
+}
+
+.Card {
+  border: 2px solid var(--muted-color);
+  background-size: cover;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  margin: 10px;
+  width: 40%;
+  height: 400px;
+}
+
+.description {
+        font-size: 0.8em;
+        display: -webkit-box;
+        overflow: hidden;
+}
+
+/* ShowCreators */
+
+.ShowCreators {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.creatorsList {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 0;
+}
+
+
+/* Add / edit form */
+
+form {
+    margin-top: 30px;
+}
+
+label {
+    font-size: 20px;
+}
+
+form p {
+    font-size: 0.6em;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+form input, textarea {
+    font-size: 0.8rem;
+}
+
+form textarea {
+    height: 150px;
+}
+
+.add-creator, .edit-creator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-or-delete {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+}
+.submit-or-delete button {
+    width: 40%;
+}
+
+.delete-button {
+    background-color: red;
+}
+/* Container for the modal and form */
+.edit-creator {
+    position: relative; /* To position the modal absolutely inside this container */
+  }
+  
+  /* Basic styling for the modal overlay */
+  .Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Basic styling for the modal content */
+  .Modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40em;
+    height: 30em;
+    gap: 10px;
+  }
+
+  .Modal p {
+    font-family: Poppins, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+    
+    /* Style buttons inside the modal */
+    .Modal button {
+      width: 17em;
+    }
+    
+  /* Style for the cancel button */
+  .Modal button:nth-child(1) {
+    background-color: #ccc;
+  }
+  
+  /* Style for the confirm button */
+  .Modal button:nth-child(2) {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+/* styles.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+.view-creator {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1.5rem; /* Reduced the column gap */
+  width: 70%;
+}
+
+.creator-image {
+  height: 300px; /* Reduced height */
+  width: 300px; /* Reduced width */
+}
+
+.creator-image img {
+  height: 100%; /* Adjusted to fit container */
+  width: 100%; /* Adjusted to fit container */
+  border: 2px solid var(--primary);
+  border-radius: var(--border-radius);
+  object-fit: cover;
+}
+
+.creator-info p {
+  font-size: 0.9em; /* Reduced font size */
+  margin-bottom: 10px; /* Added margin to space paragraphs */
+}
+
+.creator-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Added gap for spacing between links */
+}
+
+.socials-button {
+  display: flex;
+  width: max-content;
+  font-size: 0.9em; /* Reduced font size */
+  text-transform: lowercase;
+  margin-top: 10px; /* Reduced margin */
+  margin-left: 0px;
+  justify-content: flex-start;
+  padding-left: 0px;
+  transition: all 0.5s;
+  background-color: transparent !important;
+}
+
+.socials-button i {
+  font-size: 1em; /* Reduced icon size */
+  margin-right: 10px; /* Reduced margin */
+}
+
+
+main {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.modify-creator {
+  display: flex;
+  grid-column: span 2;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  height: max-content;
+}
+
+.ShowCreators .creatorsList {
+  display: flex;
+  flex-wrap: wrap; /* Allows the items to wrap onto a new line */
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.ShowCreators .creatorsList li {
+  flex: 0 1 50%; /* Allows two items per row */
+  box-sizing: border-box; /* Ensures padding and border are included in the width calculation */
+  padding: 10px; /* Optional: Add padding to space out the items */
+}
