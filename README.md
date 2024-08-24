@@ -35,7 +35,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<blockquote class="imgur-embed-pub" lang="en" data-id="a/W6RPulN" data-context="false" ><a href="//imgur.com/a/W6RPulN"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+👉🏿![Imgur Image](https://i.imgur.com/kecpmPN.gif) 
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  👉🏿 LiceCap
