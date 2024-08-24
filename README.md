@@ -35,7 +35,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿![Imgur Image](https://i.imgur.com/kecpmPN.gif) 
+👉🏿![AppWalkthorugh](https://github.com/user-attachments/assets/ba26dd38-ab54-4d13-a44c-fdfd16ff40fb)
+
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  👉🏿 LiceCap
