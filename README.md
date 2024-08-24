@@ -1,8 +1,8 @@
-# WEB103 Prework - *👉🏿 *
+# WEB103 Prework - *👉🏿 Creatorverse*
 
 Submitted by: **👉🏿 Shreyash Hamal**
 
-About this web app: **👉🏿 Creatorverse**
+About this web app: **👉🏿 Content Creator WeB App that supports CRUD **
 
 Time spent: **👉🏿 ~10-20** hours (Unsure as I worked on it over the time of 2 months with lots of time gaps)
 
