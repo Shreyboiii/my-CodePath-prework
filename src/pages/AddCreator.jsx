@@ -33,7 +33,7 @@ export default function AddCreator({ fetchCreators }) {
 
     const validationError = validateInput();
     if (validationError) {
-      alert(validationError); // Display the alert here
+      alert(validationError); 
       return;
     }
 

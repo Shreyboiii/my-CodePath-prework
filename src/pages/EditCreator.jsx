@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { supabase } from '../client'; // Assuming supabase is correctly exported
+import { supabase } from '../client'; 
 import Modal from 'react-modal';
 
-Modal.setAppElement('#root'); // For accessibility
+Modal.setAppElement('#root'); 
 
 export default function EditCreator({ fetchCreators }) {
   const { id } = useParams();  
@@ -56,7 +56,7 @@ export default function EditCreator({ fetchCreators }) {
 
     const validationError = validateInput();
     if (validationError) {
-      alert(validationError); // Display the alert here
+      alert(validationError); 
       return;
     }
 
@@ -69,7 +69,7 @@ export default function EditCreator({ fetchCreators }) {
       console.error("Error updating creator:", error);
     } else {
       fetchCreators();  
-      navigate(`/`);  // Navigate to the home page or another page after saving
+      navigate(`/`);  
     }
   };
 
@@ -83,7 +83,7 @@ export default function EditCreator({ fetchCreators }) {
       console.error("Error deleting creator:", error);
     } else {
       fetchCreators();
-      navigate('/');  // Navigate to the home page or another page after deletion
+      navigate('/');  
     }
   };
 

@@ -189,12 +189,13 @@ form textarea {
 .delete-button {
     background-color: red;
 }
-/* Container for the modal and form */
+
+/* Modal */
+
 .edit-creator {
-    position: relative; /* To position the modal absolutely inside this container */
+    position: relative; 
   }
   
-  /* Basic styling for the modal overlay */
   .Overlay {
     position: fixed;
     top: 0;
@@ -204,7 +205,6 @@ form textarea {
     background-color: rgba(0, 0, 0, 0.5);
   }
   
-  /* Basic styling for the modal content */
   .Modal {
     position: absolute;
     top: 50%;
@@ -230,25 +230,21 @@ form textarea {
   }
   
     
-    /* Style buttons inside the modal */
     .Modal button {
       width: 17em;
     }
     
-  /* Style for the cancel button */
   .Modal button:nth-child(1) {
     background-color: #ccc;
   }
   
-  /* Style for the confirm button */
   .Modal button:nth-child(2) {
     background-color: #dc3545;
     color: white;
   }
   
-/* styles.css */
+/* Genral */
 
-/* General Styles */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f2f5;
@@ -282,40 +278,40 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 1.5rem; /* Reduced the column gap */
+  grid-column-gap: 1.5rem; 
   width: 70%;
 }
 
 .creator-image {
-  height: 300px; /* Reduced height */
-  width: 300px; /* Reduced width */
+  height: 300px; 
+  width: 300px; 
 }
 
 .creator-image img {
-  height: 100%; /* Adjusted to fit container */
-  width: 100%; /* Adjusted to fit container */
+  height: 100%; 
+  width: 100%; 
   border: 2px solid var(--primary);
   border-radius: var(--border-radius);
   object-fit: cover;
 }
 
 .creator-info p {
-  font-size: 0.9em; /* Reduced font size */
-  margin-bottom: 10px; /* Added margin to space paragraphs */
+  font-size: 0.9em; 
+  margin-bottom: 10px; 
 }
 
 .creator-links {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Added gap for spacing between links */
+  gap: 10px; 
 }
 
 .socials-button {
   display: flex;
   width: max-content;
-  font-size: 0.9em; /* Reduced font size */
+  font-size: 0.9em; 
   text-transform: lowercase;
-  margin-top: 10px; /* Reduced margin */
+  margin-top: 10px; 
   margin-left: 0px;
   justify-content: flex-start;
   padding-left: 0px;
@@ -324,8 +320,8 @@ button:hover {
 }
 
 .socials-button i {
-  font-size: 1em; /* Reduced icon size */
-  margin-right: 10px; /* Reduced margin */
+  font-size: 1em; 
+  margin-right: 10px; 
 }
 
 
@@ -349,14 +345,14 @@ main {
 
 .ShowCreators .creatorsList {
   display: flex;
-  flex-wrap: wrap; /* Allows the items to wrap onto a new line */
+  flex-wrap: wrap; 
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
 .ShowCreators .creatorsList li {
-  flex: 0 1 50%; /* Allows two items per row */
-  box-sizing: border-box; /* Ensures padding and border are included in the width calculation */
-  padding: 10px; /* Optional: Add padding to space out the items */
+  flex: 0 1 50%; 
+  box-sizing: border-box; 
+  padding: 10px; 
 }

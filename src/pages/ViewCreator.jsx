@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';  // Import useNavigate
+import { useParams, useNavigate } from 'react-router-dom';  
 import { supabase } from '../client';
 import Modal from 'react-modal';
 
-Modal.setAppElement('#root'); // For accessibility
+Modal.setAppElement('#root'); 
 
 
 export default function ViewCreator({ fetchCreators }) {
   const { id } = useParams();
-  const navigate = useNavigate();  // Initialize useNavigate for navigation
+  const navigate = useNavigate();
   const [creator, setCreator] = useState({
     name: '',
     description: '',
@@ -37,7 +37,7 @@ export default function ViewCreator({ fetchCreators }) {
     fetchCreator();
   }, [id]);
 
-  // Delete function to remove the creator from the database
+  
   const handleDelete = async () => {
     const { error } = await supabase
       .from('creators')
@@ -48,7 +48,7 @@ export default function ViewCreator({ fetchCreators }) {
       console.error("Error deleting creator:", error);
     } else {
       fetchCreators();
-      navigate('/');  // Navigate to the home page or another page after deletion
+      navigate('/');  
     }
   };
 
