@@ -4,7 +4,7 @@ Submitted by: **👉🏿 Shreyash Hamal**
 
 About this web app: **👉🏿 Creatorverse**
 
-Time spent: **👉🏿 ** hours
+Time spent: **👉🏿 ~10-20 [Unsure as I worked on it over the time of 2 months with lots of time gaps]** hours
 
 ## Required Features
 
